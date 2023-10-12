@@ -1,0 +1,34 @@
+.link-container {
+    font-family: 'Comic Sans MS', cursive;
+    background: linear-gradient(to bottom, #9dcea9, #609f60);
+    border: 1px solid #90aa77;
+    border-radius: 10px;
+    padding: 20px;
+    margin: 20px;
+    box-shadow: 0 0 5px rgba(0, 0, 0, 0.2);
+    
+    h2 {
+        font-size: 1.2em;
+        margin-bottom: 10px;
+        color: #333;
+    }
+    
+    ul {
+        list-style: none;
+        padding: 0;
+        
+        li {
+            margin-bottom: 5px;
+            
+            a {
+                text-decoration: none;
+                color: #007bff;
+                transition: color 0.3s;
+                
+                &:hover {
+                    color: #022850;
+                }
+            }
+        }
+    }
+}

@@ -1,0 +1,34 @@
+{
+  "hosting": [
+    {
+    "target": "jb",
+    "public": "dist/ng-wedding-eInvitation",
+    "ignore": [
+      "firebase.json",
+      "**/.*",
+      "**/node_modules/**"
+    ],
+    "rewrites": [
+      {
+        "source": "**",
+        "destination": "/index.html"
+      }
+    ]
+  },
+  {
+    "target": "kl",
+    "public": "dist/ng-wedding-eInvitation",
+    "ignore": [
+      "firebase.json",
+      "**/.*",
+      "**/node_modules/**"
+    ],
+    "rewrites": [
+      {
+        "source": "**",
+        "destination": "/index.html"
+      }
+    ]
+  }
+]
+}

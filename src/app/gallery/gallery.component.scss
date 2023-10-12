@@ -1,0 +1,61 @@
+
+
+
+.gallery-container{
+  position: relative;
+  min-height: 50vh;
+  
+}
+
+.couple-img-container img {
+  width: 20%;
+  border: 2px solid #4F3566;
+  margin:1em;
+
+  .top{
+    img{
+      border-top-right-radius: 50%;
+    border-top-left-radius: 50%;
+    }
+  }
+
+  .bottom{
+    margin-top: 1em;
+    justify-content: space-between;
+    
+  }
+
+  img{
+    width: 45%;
+    border:2px solid #4F3566;
+  }
+
+}
+
+
+
+
+
+
+@media only screen and (min-width: 768px) {
+ 
+
+}
+
+@media only screen and (min-width: 1024px) {
+
+}
+
+@media only screen and (min-width: 1440px) {
+  
+}
+
+.couple-img-container {
+  text-align: center; /* Center-align child elements horizontally */
+}
+
+.image-container {
+  display: inline-block; /* Display the image container as an inline block */
+}
+
+

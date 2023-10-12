@@ -1,0 +1,75 @@
+<div class="">
+    <div class="">
+        <form #rsvpForm="ngForm" (ngSubmit)="onSubmit(rsvpForm)" class="form">
+
+            <input  class="form-control" id="name" name="name" #name="ngModel" 
+                [(ngModel)]="rsvp.name" placeholder="Your name.." required >
+                <input  class="form-control" id="phone" name="phone" #name="ngModel" 
+                [(ngModel)]="rsvp.phone" placeholder="Your phone number.." required>
+                <input  class="form-control" type="number" id="pax" name="pax" #name="ngModel" 
+                [(ngModel)]="rsvp.pax" placeholder="# of Guests" required>
+                <button type="submit" class="accept" 
+                [disabled]="!rsvpForm.valid" [disabled]="rsvpForm.invalid || isLoading">
+                <i class="bi bi-plus"></i>RSVP</button>
+
+                
+        </form>
+        <div>
+            <span class="errorTxt" [ngClass]="hasError ? 'show' : 'hide'">Please make sure all fields have information and are not left blank.</span>
+        </div>
+    </div>
+
+    <!--form modal-->
+    <div
+    class="modal fade"
+    id="confirmationModal"
+    tabindex="-1"
+    aria-labelledby="exampleModalLabel"
+    aria-hidden="true"
+    >
+    <div class="modal-dialog">
+        <div class="modal-content">
+            
+            <div class="modal-body">
+            <h3>Thanks for responding!</h3>
+            </div>
+            <div class="modal-footer">
+            <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">
+                Close
+            </button>
+            </div>
+        </div>
+        </div>
+    </div>
+
+
+    <div
+    class="modal fade"
+    id="errorModal"
+    tabindex="-1"
+    aria-labelledby="exampleModalLabel"
+    aria-hidden="true"
+    >
+    <div class="modal-dialog">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h5 class="modal-title" id="errorModalLabel">Error</h5>
+                <button
+                  type="button"
+                  class="btn-close"
+                  data-bs-dismiss="modal"
+                  aria-label="Close"
+                ></button>
+              </div>
+            <div class="modal-body">
+            <h3>Thanks for responding!</h3>
+            </div>
+            <div class="modal-footer">
+            <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">
+                Close
+            </button>
+            </div>
+        </div>
+        </div>
+    </div>
+</div>

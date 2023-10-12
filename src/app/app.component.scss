@@ -1,0 +1,298 @@
+//region custom
+
+.card {
+  padding: 1em;
+  margin: 1em; /* Add margin for spacing */
+  border-radius: 0.5em;
+  display: flex;
+  flex-direction: column;
+}
+
+header {
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: 10;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: #ffffff;
+  margin-top: 1em;
+  font-size: 1.5em;
+  background-color: rgba(16, 78, 78, 0.44);
+
+  h2 {
+    text-transform: uppercase;
+    margin-bottom: 1em; /* Add margin for spacing */
+  }
+
+  .nav {
+    display: flex;
+    li {
+      margin: 0 1em;
+    }
+  }
+}
+
+.gallery-area {
+  margin-top: -30px;
+}
+
+.banner-area {
+  position: relative;
+  justify-content: center;
+  min-height: 100vh;
+  color: #fff;
+  text-align: center;
+}
+
+.section-title {
+  color: #fff;
+}
+
+.couple-area {
+  position: relative;
+}
+
+.bg-image {
+  display: none;
+  background-image: url("../assets/images/ring-cropped2.png");
+  background-repeat: no-repeat;
+  background-size: contain;
+  overflow: hidden;
+  filter: blur(0.15em) contrast(0.5) opacity(0.4);
+  position: absolute;
+  background-position: bottom;
+  width: 100%;
+  height: 100%;
+}
+
+.wedding-area {
+  .wedding-title {
+    height: 20%;
+  }
+
+  .wedding-content {
+    display: flex;
+    width: 75%;
+    flex-direction: row;
+    justify-content: space-evenly;
+    flex-wrap: wrap;
+
+    .card-container {
+      margin: 1em; /* Add margin for spacing */
+      position: relative;
+      min-width: 600px;
+      width: 40%;
+      display: flex;
+      flex-direction: row;
+      margin-bottom: 2em;
+      min-height: 400px;
+
+      #calendar-card {
+        .month {
+          padding: 1em;
+          color: black;
+          display: flex;
+          justify-content: space-between;
+          align-items: flex-end;
+
+          .year-txt {
+            font-size: 2em;
+          }
+
+          span {
+            font-size: 4em;
+          }
+        }
+
+        .weekdays {
+          margin: 0;
+          padding: 5px;
+          background-color: black;
+          border-radius: 2em;
+          display: flex;
+          justify-content: space-evenly;
+          flex-wrap: wrap;
+        }
+
+        .weekdays li {
+          list-style-type: none;
+          display: inline-block;
+          width: 13.6%;
+          text-align: center;
+          color: #fff;
+        }
+
+        .days {
+          padding: 5px;
+          margin: 0;
+          display: flex;
+          flex-wrap: wrap;
+          justify-content: space-evenly;
+        }
+
+        .days li {
+          list-style-type: none;
+          display: inline-block;
+          width: 13.6%;
+          text-align: center;
+          margin-bottom: 5px;
+          color: #777;
+          font-weight: bold;
+        }
+
+        .days li .active {
+          position: relative;
+          i {
+            position: absolute;
+            color: black;
+            z-index: -1;
+            transform: scale(2);
+          }
+
+          span {
+            z-index: 2;
+          }
+
+          color: white !important;
+        }
+      }
+
+      .card {
+        border-radius: 0;
+        margin-top: 1em; /* Adjust margin for spacing */
+        width: 100%; /* Adjust width for smaller screens */
+        z-index: 2;
+      }
+
+      .info-card {
+        border: 0.5em solid black;
+        position: absolute;
+        padding: 1em;
+        margin-bottom: 3em;
+        display: flex;
+        flex-direction: column;
+        background-color: white;
+        font-family: 'Ma Shan Zheng', 'Dancing script', 'cursive';
+        font-size: 1.5em;
+        width: 100%; /* Adjust width for smaller screens */
+        height: 70%;
+
+        h3 {
+          margin-bottom: 0;
+          padding-bottom: 0.2em;
+          width: 100%;
+          border-bottom: 2px solid black;
+        }
+
+        .info-txt-container {
+          justify-content: flex-start;
+
+          h4 {
+            margin-bottom: 0;
+          }
+
+          p {
+            margin-top: 0.3em;
+          }
+        }
+      }
+
+      #date-info-card {
+        right: 0;
+        padding-left: 4em;
+        align-items: flex-start;
+        justify-content: flex-start;
+      }
+
+      #venue-info-card {
+        left: 0;
+        padding-right: 4em;
+        align-items: flex-end;
+        justify-content: flex-start;
+        text-align: right;
+      }
+    }
+
+    #venue-card-container {
+      flex-direction: row-reverse;
+
+      iframe {
+        height: 100%;
+        width: auto;
+      }
+    }
+
+    .card {
+      .card-header {
+        font-family: Dancing script;
+        font-size: 2em;
+      }
+    }
+
+    #location-card {
+    }
+  }
+}
+
+@media only screen and (max-width: 768px) {
+  /* For mobile phones: */
+  header {
+    flex-direction: column;
+
+    h2 {
+      margin-bottom: 1em;
+    }
+
+    .nav {
+      padding: 0;
+
+      li {
+        margin: 0 0.5em;
+      }
+    }
+  }
+
+  .banner-area {
+    min-height: 100vh;
+
+    h1 {
+      font-size: 1em;
+    }
+
+    h3 {
+      font-size: 1.5em;
+    }
+  }
+
+  .card-container {
+    flex-direction: column !important;
+    min-width: 80% !important;
+    width: unset !important;
+    align-items: center !important;
+
+    .card {
+      width: 70% !important;
+      margin-bottom: 1em;
+    }
+
+    .info-card {
+      position: relative !important;
+      padding: 1em !important;
+      width: unset !important;
+      text-align: start !important;
+    }
+  }
+}
+
+@media only screen and (max-width: 1040px) {
+  .bg-image {
+    display: block;
+  }
+}
+
+@media only screen and (max-width: 1440px) {
+}
+//endregion custom

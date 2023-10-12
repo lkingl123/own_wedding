@@ -1,0 +1,119 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<xliff version="1.2" xmlns="urn:oasis:names:tc:xliff:document:1.2">
+  <file source-language="en-US" datatype="plaintext" original="ng2.template">
+    <body>
+      <trans-unit id="1692852897520433855" datatype="html">
+        <source>When we first met</source>
+        <target>相遇、相识、相知</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/couple/couple.component.html</context>
+          <context context-type="linenumber">15</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="542292346856045510" datatype="html">
+        <source>When we fell in love&lt;</source>
+        <target>相爱、相恋</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/couple/couple.component.html</context>
+          <context context-type="linenumber">24</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="5263417805371224544" datatype="html">
+        <source>When we decided to spend our lives together</source>
+        <target>携手共度余生</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/couple/couple.component.html</context>
+          <context context-type="linenumber">33</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="2102860436959429055" datatype="html">
+        <source>When he proposed</source>
+        <target>求婚</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/couple/couple.component.html</context>
+          <context context-type="linenumber">41</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="6239691273340641677" datatype="html">
+        <source>When we registered</source>
+        <target>领证</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/couple/couple.component.html</context>
+          <context context-type="linenumber">50</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="6545001279547223433" datatype="html">
+        <source>JB Wedding</source>
+        <target>JB 婚礼</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/couple/couple.component.html</context>
+          <context context-type="linenumber">59</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="8341240501458763180" datatype="html">
+        <source>KL Wedding</source>
+        <target>KL 婚礼</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/couple/couple.component.html</context>
+          <context context-type="linenumber">68</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="4403110231746440504" datatype="html">
+        <source>Wedding Invitation</source>
+        <target>婚礼请柬</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/hero/hero.component.html</context>
+          <context context-type="linenumber">9</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="6691626315399100420" datatype="html">
+        <source>Groom name &amp; Elaine Yeo</source>
+        <target>李承峰 &amp; 杨依琳</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/hero/hero.component.html</context>
+          <context context-type="linenumber">12</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="881944312330315858" datatype="html">
+        <source> We&apos;re so glad you&apos;re here </source>
+        <target>人的一生有三万多天    很开心这一天    你专为我们而来</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/hero/hero.component.html</context>
+          <context context-type="linenumber">21,22</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="1981370557171963484" datatype="html">
+        <source> Date</source>
+        <target>时间</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/venue/venue.component.html</context>
+          <context context-type="linenumber">7</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="6410017727692959093" datatype="html">
+        <source>Venue</source>
+        <target>地点</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/venue/venue.component.html</context>
+          <context context-type="linenumber">92</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="2787735836180325076" datatype="html">
+        <source>Grand Imperial Restaurant</source>
+        <target>喜粤酒家</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/venue/venue.component.ts</context>
+          <context context-type="linenumber">12</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="2699025450152569771" datatype="html">
+        <source>Kee Lin Vegetarian Food</source>
+        <target>麒麟阁素食餐厅</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/venue/venue.component.ts</context>
+          <context context-type="linenumber">13</context>
+        </context-group>
+      </trans-unit>
+    </body>
+  </file>
+</xliff>

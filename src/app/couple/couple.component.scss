@@ -1,0 +1,260 @@
+
+
+
+.couple-container{
+  position: relative;
+  min-height: 50vh;
+}
+
+.couple-img-container{
+  margin:1em;
+  .bottom{
+    margin-top: 1em;
+    justify-content: space-between;
+    img{
+      width: 45%;
+    }
+  }
+
+}
+
+
+.bg-img{
+  background-image: url("../../assets/images/ring-cropped3.png");
+  background-repeat: no-repeat;
+  background-size: cover;
+  overflow: hidden;
+  filter: blur(0.1em) contrast(0.5) opacity(0.5);
+  position: absolute;
+  background-position: bottom;
+  width : 100%;
+  height: 100%;
+}
+
+
+
+.bride{
+  background-image: url("../../assets/images/bride-cropped.jpeg");
+  
+}
+
+.groom{
+  background-image: url("../../assets/images/groom.jpeg");
+  
+}
+
+.img-container{
+  border-radius: 50%;
+  height: 150px;
+  width: 150px;
+  background-size: cover;
+  background-position: center;
+  position: relative;
+}
+
+.img-container::after{
+  border-radius: 50%;
+  position: absolute;
+  content: '';
+  top: -5%;
+  left: -5%;
+  height: 110%;
+  width: 110%;
+}
+
+.img-container.bride{
+  margin-top:10%;
+  &::after{
+    border:2px solid #4F3566;
+  }
+}
+
+.img-container.groom{
+  margin-bottom:10%;
+
+  &::after{
+    border:2px solid #4F3566;
+  }
+}
+
+.card-title{
+  font-size: 2em;
+}
+
+.right{
+  position: absolute;
+  top: -10%;
+  right: -10%;
+}
+
+.left{
+  position: absolute;
+  top: -10%;
+  left: -10%;
+}
+
+.right-text{
+  text-align: right;
+}
+
+.left-text{
+  text-align: left;
+}
+
+.txt-container{
+  
+  margin: 2em;
+  padding: 1em 2em;
+  font-size: 1.5em;
+  z-index: -1;
+  min-height: 250px;
+  position: relative;
+
+  div{
+    z-index: 1;
+  }
+}
+
+.timeline-container{
+  display: flex;
+  justify-content: center;
+}
+
+.timeline {
+  margin-top: 2em;
+  list-style: none;
+  padding: 20px 0 20px;
+  position: relative;
+  width: 100%;
+  font-family: 'Dancing script', 'Ma Shan Zheng';
+}
+
+  .timeline:before {
+    top: 3%;
+    bottom: 3%;
+    position: absolute;
+    content: " ";
+    width: 3px;
+    background-color: #4f3566;
+    left: 50%;
+    margin-left: -1.5px;
+
+  }
+
+  .timeline > li {
+      margin-bottom: 10px;
+      position: relative;
+      text-align: right;
+  }
+
+      .timeline > li:before,
+      .timeline > li:after {
+          content: " ";
+          display: table;
+      }
+
+      .timeline > li:after {
+          clear: both;
+      }
+
+      .timeline > li:before,
+      .timeline > li:after {
+          content: " ";
+          display: table;
+      }
+
+      .timeline > li:after {
+          clear: both;
+      }
+
+      .timeline > li > .timeline-panel {
+          width: 46%;
+          float: left;
+          border-radius: 2px;
+          padding: -200px ;
+          position: relative;
+          //-webkit-box-shadow: 0 1px 6px rgba(0, 0, 0, 0.175);
+          //box-shadow: 0 1px 6px rgba(0, 0, 0, 0.175);
+      }
+
+      .timeline > li.timeline-inverted{
+        text-align: left;
+      }
+
+      .timeline > li.timeline-inverted > .timeline-panel {
+          float: right;
+      }
+
+          .timeline > li.timeline-inverted > .timeline-panel:before {
+              border-left-width: 0;
+              border-right-width: 15px;
+              left: -15px;
+              right: auto;
+          }
+
+          .timeline > li.timeline-inverted > .timeline-panel:after {
+              border-left-width: 0;
+              border-right-width: 14px;
+              left: -14px;
+              right: auto;
+          }
+
+
+.timeline-title {
+  margin: 0;
+  color: inherit;
+  font-size: 1em;
+
+  p{
+    margin:0
+  }
+}
+
+.timeline-date{
+  //margin:0;
+  font-weight: bolder;
+  margin-bottom: 0.5em;
+}
+
+.timeline-body > p,
+.timeline-body > ul {
+  margin-bottom: 0;
+}
+
+  .timeline-body > p + p {
+      margin-top: 5px;
+  }
+
+
+@media only screen and (min-width: 768px) {
+  .img-container{
+    
+    height: 250px;
+    width: 250px;
+  }
+
+}
+
+@media only screen and (min-width: 1024px) {
+  .bg-image{
+    display: none;
+  }
+
+  .img-container{
+    
+    height: 350px;
+    width: 350px;
+  }
+
+}
+
+@media only screen and (min-width: 1440px) {
+  .bg-image{
+    display: none;
+  }
+  .img-container{
+    
+    height: 500px;
+    width: 500px;
+  }
+}

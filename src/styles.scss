@@ -1,0 +1,225 @@
+/* You can add global styles to this file, and also import other style files */
+@import url("https://fonts.googleapis.com/css2?family=Ma+Shan+Zheng|Playfair+Display&display=swap");
+
+@keyframes fadeIn {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+
+@keyframes fadeInRight {
+  from {
+    opacity: 0;
+    transform: translateX(300px);
+    -webkit-transform: translateX(300px);
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+@keyframes fadeInLeft {
+  from {
+    opacity: 0;
+    transform: translateX(-300px);
+    -webkit-transform: translateX(-300px);
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+html {
+  //scroll-snap-type: y mandatory;
+}
+
+body {
+  margin: 0;
+  font-family: "Dancing script", "Ma Shan Zheng";
+  background: rgba(255, 255, 255, 0.7);
+  background: url(https://images.unsplash.com/photo-1633815695010-11551022c575?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=2574&q=80)
+    no-repeat center center fixed;
+
+  background-size: cover;
+}
+.content {
+  scroll-behavior: smooth;
+}
+
+ul,
+.nav {
+  list-style: none;
+}
+
+a {
+  text-decoration: none;
+  color: inherit;
+  cursor: pointer;
+}
+
+.fh {
+  height: 100%;
+}
+
+.fw {
+  width: 100%;
+}
+
+.fs {
+  @extend .fh, .fw;
+}
+
+.m-0 {
+  margin: 0;
+}
+
+.me-0 {
+  margin-block-end: 0;
+}
+
+.ms-0 {
+  margin-block-start: 0;
+}
+
+.flex-column {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.flex-row {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+section {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  min-height: 100vh;
+}
+
+.section-title {
+  margin: 1em;
+  font-size: 2em;
+  font-weight: bold;
+}
+
+.glassmorphism {
+  box-shadow: 0 8px 32px 0 rgba(31, 38, 135, 0.37);
+  border: 1px solid rgba(255, 255, 255, 0.18);
+}
+
+.vertical-txt {
+  text-orientation: upright;
+  writing-mode: vertical-lr;
+}
+
+canvas {
+  position: absolute;
+  top: 0;
+  height: 100%;
+  width: 100%;
+}
+
+.diamond {
+  position: relative;
+  height: min(75vh, 75vw);
+  width: min(75vh, 75vw);
+  text-align: center;
+  margin: 10px 40px;
+}
+.diamond:before {
+  position: absolute;
+  content: "";
+  top: 0px;
+  left: 0px;
+  height: 100%;
+  width: 100%;
+  transform: rotateY(45deg) rotateZ(45deg);
+  -webkit-transform: rotateY(45deg) rotateZ(45deg);
+  box-shadow: 0px 0px 12px gray;
+  animation: fadeInRight 1s ease-in-out;
+  -webkit-animation: fadeInRight 1s ease-in-out;
+  z-index: -1;
+  background-color: #f1f1f1;
+  box-shadow: inset 20px 20px 60px #b3aab3, inset -20px -20px 60px #f2e6f2c0;
+  filter: blur(2em);
+}
+.diamond:after {
+  @extend .glassmorphism;
+  z-index: -1;
+  position: absolute;
+  top: 10px;
+  left: 10px;
+  content: "";
+  height: calc(
+    100% - 22px
+  ); /* -22px is 2 * 10px gap on either side - 2px border on either side */
+  width: calc(
+    100% - 22px
+  ); /* -22px is 2 * 10px gap on either side - 2px border on either side */
+  transform: rotateY(45deg) rotateZ(45deg);
+  -webkit-transform: rotateY(45deg) rotateZ(45deg);
+  animation: fadeInLeft 1s ease-in-out;
+  -webkit-animation: fadeInLeft 1s ease-in-out;
+  z-index: -1;
+}
+
+.blur-bg {
+  position: relative;
+  z-index: -1;
+}
+
+.blur-bg::before {
+  background-color: #fff; // #d2c8d2;
+  box-shadow: inset 20px 20px 60px #b3aab3, inset -20px -20px 60px #f2e6f2;
+  filter: blur(3em);
+  content: "";
+  position: absolute;
+  height: 100%;
+  width: 100%;
+  top: 0;
+  left: 0;
+  z-index: -1;
+}
+
+@media only screen and (min-width: 1440px) {
+}
+
+@media only screen and (min-width: 768px) {
+  .diamond {
+    height: 65vw;
+    width: 65vw;
+    //margin: 10px 40px;
+  }
+  .diamond:before {
+    content: "";
+    transform: rotateX(45deg) rotateZ(45deg);
+    filter: blur(5em);
+  }
+  .diamond:after {
+    top: 10px;
+    left: 10px;
+    content: "";
+    height: calc(
+      100% - 22px
+    ); /* -22px is 2 * 10px gap on either side - 2px border on either side */
+    width: calc(
+      100% - 22px
+    ); /* -22px is 2 * 10px gap on either side - 2px border on either side */
+    transform: rotateX(45deg) rotateZ(45deg);
+  }
+}
+
+@media only screen and (min-width: 1024px) {
+  .diamond {
+    height: 45vw;
+    width: 45vw;
+  }
+}

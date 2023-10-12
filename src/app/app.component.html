@@ -1,0 +1,49 @@
+<div class="content" role="main">
+  <header>
+    <ul class="nav">
+      <li><a href="#">Home</a></li>
+      <li><a href="#couple">Couple</a></li>
+      <li><a href="#wedding">Venue</a></li>
+      <li><a href="#biography">Biography</a></li>
+      <li><a href="#link">Links</a></li>
+      <li><a href="#rsvp">RSVP</a></li>
+    </ul>
+  </header>
+  <section class="banner-area">
+    
+    <app-hero [isKL]="isKL" class="fs"></app-hero>
+  </section>
+
+  <section class="couple-area" id="couple">
+    <div class="bg-image"></div>
+    <h1 class="section-title">The Happy Couple</h1>
+    <app-couple></app-couple>
+  </section>
+  
+  <section class="biography-area" id="biography">
+    <h1 class="section-title">Biography</h1>
+    <app-biography></app-biography>    
+  </section>
+
+  <section class="gallery-area" id="gallery">
+    <app-gallery></app-gallery>
+  </section>
+
+  <section class="wedding-area " id="wedding">
+    <h1 class="section-title">The Venue </h1>
+    <app-venue [isKL]="isKL" class="fs blur-bg"></app-venue>
+  </section>
+
+  <section class="link-area" id="link">
+    <h1 class="section-title">Links</h1>
+    <app-link></app-link>
+  </section>
+
+  <section class="rsvp-area" id="rsvp">
+    <h1 class="section-title">Will you be attending?</h1>
+    <app-rsvp-form [isKL]="isKL" class="fs" id="rsvp-form"></app-rsvp-form>
+  </section>
+  
+  
+</div>
+

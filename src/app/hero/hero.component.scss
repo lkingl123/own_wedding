@@ -1,0 +1,111 @@
+.banner-image{
+  background-image: url("/assets/images/background.jpeg");
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-size: cover;
+  background-position: center center;
+
+}
+
+.txt-container{
+  font-family: 'Dancing script','Ma Shan Zheng';
+  padding: 0 1em;
+  color:#585755;
+}
+
+.subtext{
+  
+  position: absolute;
+  bottom: 10%;
+  font-family: 'Dancing script','Ma Shan Zheng';
+  color: rgb(255, 255, 255);
+  
+
+}
+
+.title{
+  margin-bottom: 1em;
+  h1{
+    
+    font-size: 2.5em;
+    font-weight: 500;
+    font-family: 'Playfair Display','Ma Shan Zheng';
+  }
+  
+  
+}
+
+h3{
+  margin-bottom: 0;
+  margin-top:0.5em;
+  font-size: 1.5em;
+  font-weight: 500;
+  
+}
+
+h5{
+  margin-top:0.5em;
+  margin-bottom: 0.5em;
+  font-size: 1em;
+  font-weight: 300;
+}
+
+
+
+@media only screen and (min-width: 768px) {
+  h1{
+    font-size: 5em;
+  }
+
+  h3{
+    font-size: 2em;
+  }
+  
+  h5{
+    font-size: 1.5em;
+    font-weight: 300;
+  }
+  .subtext{
+    font-size: 1.5em;
+  }
+  
+}
+
+@media only screen and (min-width: 1024px) {
+  h1{
+    font-size: 5em;
+  }
+
+  h3{
+    font-size: 2em;
+  }
+  
+  h5{
+    font-size: 1.5em;
+    font-weight: 300;
+  }
+  .subtext{
+    right: 20%;
+    bottom:10%;
+  }
+  
+}
+
+@media only screen and (min-width: 1440px) {
+  h1{
+    font-size: 8em;
+  }
+
+  h3{
+    font-size: 4em;
+  }
+  
+  h5{
+    font-size: 3em;
+    font-weight: 300;
+  }
+
+}

@@ -1,0 +1,307 @@
+#calendar-card{
+  width: 90%;
+  height: 90%;
+  display: flex;
+  flex-direction: column;
+  padding: 0 1em;
+  font-family: 'Playfair Display';
+
+  .month {
+    padding: 1em;
+    color:black;
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-end;
+    padding-top:0;
+
+    .year-txt{
+      font-size: 2em;
+    }
+    
+
+    span{
+      font-size: 4em;
+    }
+  }
+  
+  .weekdays {
+    margin: 0;
+    padding: 5px;
+    background-color: black;
+    
+    border-radius: 2em;
+    display: flex;
+    justify-content: space-evenly;
+    flex-wrap: wrap;
+  }
+  
+  .weekdays li {
+    list-style-type: none;
+    display: inline-block;
+    width: 13.6%;
+    text-align: center;
+    color:#fff;
+  }
+  
+  .days {
+    padding: 5px;
+    margin: 0;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    flex: 1;
+  }
+  
+  .days li {
+    list-style-type: none;
+    width: 13.6%;
+    text-align: center;
+    margin-bottom: 5px;
+    color: #777;
+    font-weight: bold;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    i{
+      position: absolute;
+      color:black;
+      transform: scale(2)
+    }
+
+  }
+  
+  .days li .active {
+    position: relative;
+   
+    span{
+      z-index: 2;
+    }
+    color: white !important
+  }
+}
+
+.wedding-container {
+  width: 92%;
+  max-width: 1152px;
+  padding: 0 16px;
+  margin: 0 auto; }
+
+.wedding-date-container, .wedding-venue-container {
+  position: relative;
+  max-width: 992px;
+  margin: 0 auto 100px auto }
+
+
+/*1.6 Venues*/
+.venues {
+  padding-top: 80px;
+  padding-bottom: 112px; }
+  .venues .s-title {
+    padding-bottom: 48px; }
+
+.venues__card {
+  width: 560px;
+  border: 8px solid #4F3566; }
+
+.address__map {
+  width: 576px;
+  height: 408px; }
+
+.map {
+  width: 100%;
+  height: 100%; 
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: #fff;
+
+  iframe{
+    height: 90%;
+    width: 90%;
+  }
+}
+
+.venues__ceremony {
+  margin-bottom: 5em; }
+
+.venues__ceremony {
+  min-height: 450px;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: end;
+  -webkit-justify-content: flex-end;
+      -ms-flex-pack: end;
+          justify-content: flex-end; }
+
+.venues__reception {
+  min-height: 450px;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: start;
+  -webkit-justify-content: flex-start;
+      -ms-flex-pack: start;
+          justify-content: flex-start; }
+
+.address__map-container--left {
+  position: absolute;
+  -webkit-box-ordinal-group: 2;
+  -webkit-order: 1;
+      -ms-flex-order: 1;
+          order: 1;
+  left: 0;
+  top: 100px; }
+
+.address__map-container--right {
+  position: absolute;
+  right: 0;
+  top:100px; }
+
+.address__map--reception, .address__map--ceremony {
+  border: none; }
+
+.venues__card-head {
+  position: relative;
+  padding-bottom: 15px;
+  margin-bottom: 24px; }
+  .venues__card-head::after {
+    content: "";
+    position: absolute;
+    width: 112px;
+    height: 1px;
+    background-color: #4F3566;
+    bottom: 0;
+    left: 0;
+    -webkit-transform: translateX(-50%);
+        -ms-transform: translateX(-50%);
+            transform: translateX(-50%); }
+
+.venues__card-title {
+  font-family: "Playfair Display",'Ma Shan Zheng', serif;
+  font-weight: 700;
+  font-size: 32px;
+  line-height: 44px;
+  text-transform: uppercase;
+  color: #3C3641; }
+
+.venues__card-block {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex; }
+
+.venues__card-label {
+  font-weight: 700;
+  font-size: 24px;
+  line-height: 24px;
+  color: #615869; }
+  
+
+.venues__card-data {
+  font-weight: 400;
+  font-size: 24px;
+  line-height: 24px;
+  color: #615869; }
+
+.venues__card-link {
+  font-weight: 400;
+  font-size: 20px;
+  line-height: 20px;
+  color: #4F3566; }
+
+// .venues__card {
+//   max-width: 305px; }
+
+.ceremony__card {
+  padding-top: 34px;
+  padding-left: 224px;
+  padding-right: 32px;
+  padding-bottom: 34px; 
+
+}
+
+.show{
+  display: block;
+}
+
+.hide{
+  display: none;
+}
+
+.mrg {
+  margin-right: 48px; }
+
+.venues__card-info .venues__card-block:first-child {
+  margin-bottom: 44px; }
+
+.venues__card-link {
+  display: block;
+  margin-top: 33px;
+  text-align: center;
+  opacity: 1;
+  -webkit-transition: all .2s ease-out;
+  -o-transition: all .2s ease-out;
+  transition: all .2s ease-out; }
+  .venues__card-link:hover {
+    opacity: 0.8; }
+
+.reception__card {
+  padding-top: 34px;
+  padding-right: 174px;
+  padding-left: 82px;
+  padding-bottom: 34px; }
+
+/*1.6 END Venues*/
+/*1.6 Venues media*/
+@media only screen and (max-width: 1030px) {
+  .venues .container-sm {
+    max-width: 100%; }
+  .venues__ceremony, .venues__reception {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -webkit-flex-direction: column;
+        -ms-flex-direction: column;
+            flex-direction: column; }
+  .address__map {
+    position: relative;
+    top: 0;
+    left: 50%;
+    width: 92%;
+    -webkit-transform: translateX(-50%);
+        -ms-transform: translateX(-50%);
+            transform: translateX(-50%); }
+  .venues__card {
+    max-width: 90%;
+    width: 90%;
+    margin: 0 auto;
+    padding-right: 20px;
+    padding-left: 20px;
+    text-align: center;
+    margin-bottom: 20px;
+    -webkit-box-sizing: border-box;
+            box-sizing: border-box; }
+  .venues__card-block {
+    -webkit-box-pack: center;
+    -webkit-justify-content: center;
+        -ms-flex-pack: center;
+            justify-content: center; }
+  .venues__card-head::after {
+    left: 50%;
+    -webkit-transform: translateX(-50%);
+        -ms-transform: translateX(-50%);
+            transform: translateX(-50%); }
+  .venues__ceremony {
+    margin-bottom: 60px; } }
+
+@media only screen and (max-width: 500px) {
+  .venues__card-title {
+    font-size: 24px;
+    line-height: 34px; }
+  }
+
+/*1.6 END Venues media*/

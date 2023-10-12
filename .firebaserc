@@ -1,0 +1,17 @@
+{
+  "projects": {
+    "default": "einvite-2dff5"
+  },
+  "targets": {
+    "einvite-2dff5": {
+      "hosting": {
+        "kl": [
+          "einvite-kl"
+        ],
+        "jb": [
+          "einvite-jb"
+        ]
+      }
+    }
+  }
+}

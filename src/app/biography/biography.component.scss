@@ -1,0 +1,39 @@
+
+body, h1 {
+    font-family: 'Comic Sans MS', cursive; /* Comic Sans MS with cursive fallback */
+    color: #333; /* Set the text color to a readable color */
+    font-weight:bold;
+}
+
+p {
+    font-family: 'Comic Sans MS', cursive; /* Comic Sans MS with cursive fallback */
+    color: #333; /* Set the text color to a readable color */
+}
+
+
+
+/* Basic styling */
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f0f0f0;
+    text-align: center;
+}
+
+.biography {
+    background: linear-gradient(to bottom, #bcc7bb, #6b8d6b);
+    border-radius: 5px;
+    width:800px;
+    padding: 20px;
+    color: #fff; /* Set text color to white */
+    font-size: larger;
+}
+
+
+h1 {
+    font-size: 1.5em;
+    margin-top: 10px;
+}
+
+p {
+    margin-top: 10px;
+}
