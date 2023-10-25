@@ -4,11 +4,10 @@
 .gallery-container{
   position: relative;
   min-height: 50vh;
-  
 }
 
 .couple-img-container img {
-  width: 20%;
+  width: 45%;
   border: 2px solid #4F3566;
   margin:1em;
 
@@ -43,7 +42,10 @@
 }
 
 @media only screen and (min-width: 1024px) {
-
+  .couple-img-container img {
+    width: 30%;
+  
+  }
 }
 
 @media only screen and (min-width: 1440px) {
