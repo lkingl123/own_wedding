@@ -2,7 +2,7 @@
   "hosting": [
     {
     "target": "jpn",
-    "public": "dist/ng-wedding-eInvitation/en-US",
+    "public": "dist/ng-wedding-eInvitation",
     "ignore": [
       "firebase.json",
       "**/.*",
