@@ -8,6 +8,8 @@
                 [(ngModel)]="rsvp.phone" placeholder="Your phone number.." required>
                 <input  class="form-control" type="number" id="pax" name="pax" #name="ngModel" 
                 [(ngModel)]="rsvp.pax" placeholder="# of Guests" required>
+                <input  class="form-control" id="address" name="address" #name="ngModel" 
+                [(ngModel)]="rsvp.address" placeholder="Mailing Address" required>
                 <button type="submit" class="accept" 
                 [disabled]="!rsvpForm.valid" [disabled]="rsvpForm.invalid || isLoading">
                 <i class="bi bi-plus"></i>RSVP</button>
@@ -15,7 +17,7 @@
                 
         </form>
         <div>
-            <span class="errorTxt" [ngClass]="hasError ? 'show' : 'hide'">Please make sure all fields have information and are not left blank.</span>
+            <span class="errorTxt" [ngClass]="hasError ? 'show' : 'hide'">Kindly complete all the fields with the necessary information.</span>
         </div>
     </div>
 

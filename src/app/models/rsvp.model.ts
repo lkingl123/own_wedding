@@ -2,5 +2,6 @@ export interface IRSVP {
     id?: string;
     name : string;
     phone : string;
-    pax : number;
+    pax : string;
+    address : string;
 }

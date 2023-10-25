@@ -12,7 +12,7 @@ declare var window: any;
   styleUrls: ['./rsvp-form.component.scss']
 })
 export class RsvpFormComponent implements OnInit{
-  rsvp: IRSVP = { name: '', phone: '', pax: null }
+  rsvp: IRSVP = { name: '', phone: '', pax: '', address: '',}
   rsvps: IRSVP[] = [];
   confirmationModal: any;
   errorModal:any;
