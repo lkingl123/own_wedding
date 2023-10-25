@@ -1,8 +1,8 @@
 {
   "hosting": [
     {
-    "target": "jb",
-    "public": "dist/ng-wedding-eInvitation",
+    "target": "jpn",
+    "public": "dist/ng-wedding-eInvitation/en-US",
     "ignore": [
       "firebase.json",
       "**/.*",
@@ -16,7 +16,7 @@
     ]
   },
   {
-    "target": "kl",
+    "target": "en",
     "public": "dist/ng-wedding-eInvitation",
     "ignore": [
       "firebase.json",

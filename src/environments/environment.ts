@@ -5,13 +5,12 @@
 export const environment = {
   production: false,
   firebase: {
-    apiKey: "AIzaSyAgS6FGrLY8K0u2kVSrlFmx3humUuOALIc",
-    authDomain: "einvite-2dff5.firebaseapp.com",
-    databaseURL: "https://einvite-2dff5-default-rtdb.firebaseio.com",
-    projectId: "einvite-2dff5",
-    storageBucket: "einvite-2dff5.appspot.com",
-    messagingSenderId: "963542533753",
-    appId: "1:963542533753:web:2a47b2cd80e0a5da13b6a8"
+    apiKey: "AIzaSyAfOWLsTPy_bvwFsJEA4ML3aigQfuDSbcQ",
+    authDomain: "einvite-ede8d.firebaseapp.com",
+    projectId: "einvite-ede8d",
+    storageBucket: "einvite-ede8d.appspot.com",
+    messagingSenderId: "447945930691",
+    appId: "1:447945930691:web:9cae5f8780fc8bb21c2f76"
   }
 };
 

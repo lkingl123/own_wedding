@@ -1,15 +1,15 @@
 {
   "projects": {
-    "default": "einvite-2dff5"
+    "default": "einvite-ede8d"
   },
   "targets": {
-    "einvite-2dff5": {
+    "einvite-ede8d": {
       "hosting": {
-        "kl": [
-          "einvite-kl"
+        "jpn": [
+          "einvite-japan"
         ],
-        "jb": [
-          "einvite-jb"
+        "en": [
+          "einvite-my"
         ]
       }
     }
