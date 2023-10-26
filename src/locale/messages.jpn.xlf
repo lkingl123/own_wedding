@@ -4,7 +4,7 @@
     <body>
       <trans-unit id="1692852897520433855" datatype="html">
         <source>When we first met</source>
-        <target>相遇、相识、相知</target>
+        <target>初めて会ったとき</target>
         <context-group purpose="location">
           <context context-type="sourcefile">src/app/couple/couple.component.html</context>
           <context context-type="linenumber">15</context>
@@ -12,6 +12,7 @@
       </trans-unit>
       <trans-unit id="7031875031297891634" datatype="html">
         <source>When Jake proposed</source>
+        <target>ジェイクがプロポーズしたとき</target>
         <context-group purpose="location">
           <context context-type="sourcefile">src/app/couple/couple.component.html</context>
           <context context-type="linenumber">25</context>
@@ -19,6 +20,7 @@
       </trans-unit>
       <trans-unit id="8880724548818886328" datatype="html">
         <source>SLC Wedding</source>
+        <target>SLCウェディング</target>
         <context-group purpose="location">
           <context context-type="sourcefile">src/app/couple/couple.component.html</context>
           <context context-type="linenumber">44</context>
@@ -26,6 +28,7 @@
       </trans-unit>
       <trans-unit id="4403110231746440504" datatype="html">
         <source>Wedding Invitation</source>
+        <target>結婚式の招待状 </target>
         <context-group purpose="location">
           <context context-type="sourcefile">src/app/hero/hero.component.html</context>
           <context context-type="linenumber">9</context>
@@ -33,6 +36,7 @@
       </trans-unit>
       <trans-unit id="321480415591626840" datatype="html">
         <source>Jake &amp; MJ</source>
+        <target>Jake &amp; MJ</target>
         <context-group purpose="location">
           <context context-type="sourcefile">src/app/hero/hero.component.html</context>
           <context context-type="linenumber">12</context>
@@ -40,6 +44,7 @@
       </trans-unit>
       <trans-unit id="606593048306772898" datatype="html">
         <source>As we join in marriage,</source>
+        <target>結婚式に参加する際</target>
         <context-group purpose="location">
           <context context-type="sourcefile">src/app/hero/hero.component.html</context>
           <context context-type="linenumber">21</context>
@@ -47,6 +52,7 @@
       </trans-unit>
       <trans-unit id="5913554824017902879" datatype="html">
         <source>We&apos;re so glad to have the pleasure of your company</source>
+        <target>ご一緒できてとてもうれしいです</target>
         <context-group purpose="location">
           <context context-type="sourcefile">src/app/hero/hero.component.html</context>
           <context context-type="linenumber">22</context>
@@ -54,6 +60,7 @@
       </trans-unit>
       <trans-unit id="1981370557171963484" datatype="html">
         <source> Date</source>
+        <target>相遇、相识、相知</target>
         <context-group purpose="location">
           <context context-type="sourcefile">src/app/venue/venue.component.html</context>
           <context context-type="linenumber">7</context>
@@ -61,6 +68,7 @@
       </trans-unit>
       <trans-unit id="4709391704491771768" datatype="html">
         <source>2, February 2024</source>
+        <target>相遇、相识、相知</target>
         <context-group purpose="location">
           <context context-type="sourcefile">src/app/venue/venue.component.html</context>
           <context context-type="linenumber">13</context>
@@ -68,6 +76,7 @@
       </trans-unit>
       <trans-unit id="6410017727692959093" datatype="html">
         <source>Venue</source>
+        <target>相遇、相识、相知</target>
         <context-group purpose="location">
           <context context-type="sourcefile">src/app/venue/venue.component.html</context>
           <context context-type="linenumber">90</context>
@@ -75,23 +84,10 @@
       </trans-unit>
       <trans-unit id="2131227014992813116" datatype="html">
         <source>Dai-Ichi Japanese Ward</source>
+        <target>第一日本病棟</target>
         <context-group purpose="location">
           <context context-type="sourcefile">src/app/venue/venue.component.html</context>
           <context context-type="linenumber">94</context>
-        </context-group>
-      </trans-unit>
-      <trans-unit id="2787735836180325076" datatype="html">
-        <source>Grand Imperial Restaurant</source>
-        <context-group purpose="location">
-          <context context-type="sourcefile">src/app/venue/venue.component.ts</context>
-          <context context-type="linenumber">12</context>
-        </context-group>
-      </trans-unit>
-      <trans-unit id="2699025450152569771" datatype="html">
-        <source>Kee Lin Vegetarian Food</source>
-        <context-group purpose="location">
-          <context context-type="sourcefile">src/app/venue/venue.component.ts</context>
-          <context context-type="linenumber">13</context>
         </context-group>
       </trans-unit>
     </body>
