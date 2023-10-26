@@ -70,7 +70,8 @@
                   "with": "src/environments/environment.prod.ts"
                 }
               ],
-              "outputHashing": "all"
+              "outputHashing": "all",
+              "localize":["en-US","zh"]
             },
             "development": {
               "buildOptimizer": false,
@@ -79,6 +80,15 @@
               "extractLicenses": false,
               "sourceMap": true,
               "namedChunks": true
+            },
+            "zh": {
+              "buildOptimizer": false,
+              "optimization": false,
+              "vendorChunk": true,
+              "extractLicenses": false,
+              "sourceMap": true,
+              "namedChunks": true,
+              "localize":["zh"]
             }
           },
           "defaultConfiguration": "production"
