@@ -1,23 +1,8 @@
 {
   "hosting": [
-    {
-    "target": "jpn",
-    "public": "dist/ng-wedding-eInvitation",
-    "ignore": [
-      "firebase.json",
-      "**/.*",
-      "**/node_modules/**"
-    ],
-    "rewrites": [
-      {
-        "source": "**",
-        "destination": "/index.html"
-      }
-    ]
-  },
   {
     "target": "en",
-    "public": "dist/ng-wedding-eInvitation",
+    "public": "dist/ng-wedding-eInvitation/en-US",
     "ignore": [
       "firebase.json",
       "**/.*",
