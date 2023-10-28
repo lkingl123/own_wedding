@@ -34,11 +34,13 @@ export class AppComponent implements OnInit{
   }
 
   ngAfterViewInit():void{
-    // setTimeout(() => {
-    //   /** spinner ends after 5 seconds */
-    //   this.loadingService.setLoading(false);
-    // }, 5000);
-    this.loadingService.setLoading(false);
+    setTimeout(() => {
+      /** spinner ends after 5 seconds */
+       this.isLoading = false;
+     this.loadingService.setLoading(false);
+    }, 1000);
+    // this.isLoading = false;
+    // this.loadingService.setLoading(false);
     
   }
   

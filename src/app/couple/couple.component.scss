@@ -135,7 +135,7 @@
     position: absolute;
     content: " ";
     width: 3px;
-    background-color: #4f3566;
+    background-color: #fff;
     left: 50%;
     margin-left: -1.5px;
 
@@ -202,7 +202,7 @@
 
 .timeline-title {
   margin: 0;
-  color: inherit;
+  color: #fff;
   font-size: 1em;
 
   p{
@@ -214,6 +214,7 @@
   //margin:0;
   font-weight: bolder;
   margin-bottom: 0.5em;
+  color:#fff
 }
 
 .timeline-body > p,
@@ -227,6 +228,25 @@
 
 
 @media only screen and (min-width: 768px) {
+  // .timeline-container{
+  //   position: relative;
+    
+    
+  // }
+
+  // .timeline-container::before {
+  //   background-color: #fff; // #d2c8d2;
+  //   box-shadow: inset 20px 20px 60px #b3aab3, inset -20px -20px 60px #f2e6f2;
+  //   filter: blur(3em);
+  //   content: "";
+  //   position: absolute;
+  //   height: 100%;
+  //   width: 100%;
+  //   top: 0;
+  //   left: 0;
+  //   //z-index: -1;
+  // }
+
   .img-container{
     
     height: 250px;
