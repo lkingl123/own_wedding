@@ -239,8 +239,10 @@ header {
 }
 
 @media only screen and (max-width: 768px) {
+  
   /* For mobile phones: */
   header {
+    font-size: 1em;
     flex-direction: column;
 
     h2 {
