@@ -16,20 +16,20 @@
       "root": "",
       "sourceRoot": "src",
       "prefix": "app",
-      "i18n": {
-        "sourceLocale": "en-US",
-        "locales": {
-          "zh": {
-            "translation": "src/locale/messages.zh.xlf"
-          }
-        }
-      },
+      // "i18n": {
+      //   "sourceLocale": "en-US",
+      //   "locales": {
+      //     "zh": {
+      //       "translation": "src/locale/messages.zh.xlf"
+      //     }
+      //   }
+      // },
       "architect": {
         "build": {
           
           "builder": "@angular-devkit/build-angular:browser",
           "options": {
-            "localize":["en-US"],
+            //"localize":["en-US"],
             "outputPath": "dist/ng-wedding-eInvitation",
             "index": "src/index.html",
             "main": "src/main.ts",
@@ -43,7 +43,6 @@
             "styles": [
               
               "node_modules/font-awesome/css/font-awesome.css",
-              
               "src/styles.scss"
             ],
             "scripts": [
@@ -71,7 +70,7 @@
                 }
               ],
               "outputHashing": "all",
-              "localize":["en-US","zh"]
+              //"localize":["en-US","zh"]
             },
             "development": {
               "buildOptimizer": false,

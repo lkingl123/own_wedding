@@ -16,6 +16,7 @@ import { NgVerticalTimelineModule  } from 'ng-vertical-timeline';
 import { GalleryComponent } from './gallery/gallery.component';
 import { BiographyComponent } from './biography/biography.component';
 import { LinkComponent } from './link/link.component';
+import { SpinnerComponent } from './spinner/spinner.component';
 
 @NgModule({
   declarations: [
@@ -26,7 +27,8 @@ import { LinkComponent } from './link/link.component';
     CoupleComponent,
     GalleryComponent,
     BiographyComponent,
-    LinkComponent
+    LinkComponent,
+    SpinnerComponent
   ],
   imports: [
     BrowserModule, FormsModule, ReactiveFormsModule, HttpClientModule,
@@ -35,6 +37,6 @@ import { LinkComponent } from './link/link.component';
     provideFirestore(() => getFirestore())
   ],
   providers: [FormBuilder,FirebaseProvider],
-  bootstrap: [AppComponent]
+  bootstrap: [AppComponent],
 })
 export class AppModule { }

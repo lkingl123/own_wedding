@@ -1,6 +1,7 @@
 import { DOCUMENT } from '@angular/common';
 import { Component, Inject, OnInit } from '@angular/core';
 import Fireflies from 'node_modules/fireflies.js';
+import { LoaderService } from 'src/services/loader.service';
 @Component({
   selector: 'app-root',
   templateUrl: './app.component.html',
@@ -9,9 +10,11 @@ import Fireflies from 'node_modules/fireflies.js';
 export class AppComponent implements OnInit{
   title = 'ng-wedding-eInvitation';
   isKL:boolean = true;
+  isLoading:boolean = true;
 
-  constructor(@Inject(DOCUMENT) private document: Document) { 
+  constructor(@Inject(DOCUMENT) private document: Document, private loadingService: LoaderService) { 
     console.log(this.document.location.href);
+    this.loadingService.setLoading(true);
     if(this.document.location.href.toLowerCase().indexOf("kl") == -1){
       this.isKL = false;
     }
@@ -28,6 +31,15 @@ export class AppComponent implements OnInit{
       true // should fireflies weave a web of threads in-between them?
     ) 
 
+  }
+
+  ngAfterViewInit():void{
+    // setTimeout(() => {
+    //   /** spinner ends after 5 seconds */
+    //   this.loadingService.setLoading(false);
+    // }, 5000);
+    this.loadingService.setLoading(false);
+    
   }
   
 }
