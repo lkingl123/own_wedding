@@ -1,7 +1,6 @@
 import { Component, Inject, Input, OnInit } from '@angular/core';
 import { HttpClient, HttpHeaders, HttpParams } from '@angular/common/http';
 import { FormBuilder, Validators, FormArray, NgForm } from '@angular/forms';
-import { FirebaseProvider } from 'src/providers/firebase/firebase';
 import { IRSVP } from '../models/rsvp.model';
 import { DOCUMENT } from '@angular/common';
 import "node_modules/bootstrap/dist/css/bootstrap.min.css";
@@ -18,17 +17,17 @@ export class RsvpFormComponent implements OnInit{
   errorModal:any;
   hasError:boolean = false;
   isLoading:boolean = false;
-  constructor(@Inject(DOCUMENT) private document: Document, private fb: FormBuilder, private http: HttpClient, private firebaseProvider: FirebaseProvider) {
+  constructor(@Inject(DOCUMENT) private document: Document, private fb: FormBuilder, private http: HttpClient,) {
     console.log(this.document.location.href);
   }
 
   @Input() isKL: boolean = true;
 
   ngOnInit() {
-    this.firebaseProvider.getRSVPs(this.isKL).subscribe((res: IRSVP[]) => {
-      this.rsvps = res;
-      console.table(this.rsvps)
-    })
+    // this.firebaseProvider.getRSVPs(this.isKL).subscribe((res: IRSVP[]) => {
+    //   this.rsvps = res;
+    //   console.table(this.rsvps)
+    // })
 
     this.confirmationModal = new window.bootstrap.Modal(
       document.getElementById('confirmationModal')
@@ -45,13 +44,13 @@ export class RsvpFormComponent implements OnInit{
     this.validate(form);
     if(!this.hasError){
       this.isLoading = true;
-      this.firebaseProvider.addRSVP(form.value,this.isKL).
-        then(() => 
-        {
-          this.openConfirmationModal();
-          form.reset(); 
+      // this.firebaseProvider.addRSVP(form.value,this.isKL).
+      //   then(() => 
+      //   {
+      //     this.openConfirmationModal();
+      //     form.reset(); 
           this.isLoading = false;
-        });
+        
     }
     
   }
