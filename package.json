@@ -6,8 +6,7 @@
     "start": "set NODE_OPTIONS=--openssl-legacy-provider && ng serve",
     "build": "set NODE_OPTIONS=--openssl-legacy-provider && ng build",
     "watch": "ng build --watch --configuration development",
-    "test": "ng test",
-    "postinstall": "npm install --legacy-peer-deps"
+    "test": "ng test"
   },
   "private": true,
   "dependencies": {
